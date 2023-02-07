@@ -2,6 +2,8 @@ import { React, useState, useEffect } from 'react';
 
 import arrow_left from '../assets/arrow_left.png';
 import arrow_right from '../assets/arrow_right.png';
+import arrow_left_mobile from '../assets/arrow_left_mobile.png';
+import arrow_right_mobile from '../assets/arrow_right_mobile.png';
 import '../styles/Slideshow.css';
 
 function Slideshow({ pictures }) {
@@ -40,16 +42,28 @@ function Slideshow({ pictures }) {
     return (
       <div className="slideshow-content">
         <img className="slideshow-img" src={pictures[index]} alt="test" />
-        <button className="slideshow-button-left" onClick={handlePrevious}>
-          <img src={arrow_left} alt="arrow" className="" />
-        </button>
-        <button className="slideshow-button-right" onClick={handleNext}>
-          <img src={arrow_right} alt="arrow" className="" />
-        </button>
+        {isMobile && (
+          <div>
+            <button className="slideshow-button-left" onClick={handlePrevious}>
+              <img src={arrow_left_mobile} alt="arrow" className="" />
+            </button>
+            <button className="slideshow-button-right" onClick={handleNext}>
+              <img src={arrow_right_mobile} alt="arrow" className="" />
+            </button>
+          </div>
+        )}
         {!isMobile && (
-          <p className="img-counter">
-            {index + 1}/{pictures.length}
-          </p>
+          <div>
+            <button className="slideshow-button-left" onClick={handlePrevious}>
+              <img src={arrow_left} alt="arrow" className="" />
+            </button>
+            <button className="slideshow-button-right" onClick={handleNext}>
+              <img src={arrow_right} alt="arrow" className="" />
+            </button>
+            <p className="img-counter">
+              {index + 1}/{pictures.length}
+            </p>
+          </div>
         )}
       </div>
     );
