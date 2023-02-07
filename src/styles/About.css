@@ -1,0 +1,19 @@
+.section-collapsible{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+     margin: 20px 0 232px 0 ;     
+}
+.about-bannerWrapper{
+     width: 100%;
+     
+}
+@media (max-width: 720px) {
+     .about-bannerWrapper{
+          height: 225px;
+
+     }
+   }

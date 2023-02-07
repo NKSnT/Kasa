@@ -1,0 +1,41 @@
+.error-body{    
+
+     display: flex;
+     justify-content:center;
+     align-items: center;
+     flex-direction: column;               
+}
+.error-404{
+font-size: 288px;
+font-weight: 700;
+margin: 0;
+}
+.error-txt{
+     text-align: center;
+     font-size: 36px;
+     margin: 0;
+}
+.error-link{
+     font-size: 18px;
+     margin: 160px 0 60px 0; 
+}
+.error-404, 
+.error-txt,
+.error-link a{
+     color: #FF6060 ;
+}
+
+@media (max-width: 720px) {
+     .error-body{    
+          height: 100%;             
+     }
+     .error-404{
+          font-size: 96px;
+     }
+     .error-txt{
+          font-size: 18px;
+     }
+     .error-link{
+          font-size: 14px;          
+     }
+   }

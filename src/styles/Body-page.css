@@ -1,0 +1,26 @@
+.mainWrapper{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     
+   }
+.mainContainer {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     max-width: 1240px;
+     min-height: calc(100vh - 200px); 
+
+     margin-left: 40px;     
+     margin-right: 40px;
+   }
+   @media (max-width: 991px) {
+     .mainContainer {     
+     min-height: calc(100vh - 100px); 
+   }}
+   @media (max-width: 720px) {
+     .mainContainer {
+     margin-left: 20px;     
+     margin-right: 20px;
+   }}

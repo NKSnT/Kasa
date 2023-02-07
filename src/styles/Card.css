@@ -1,0 +1,40 @@
+.card-grid-container{
+     justify-self: center;
+     align-self: center;    
+     border-radius: 25px;
+
+     max-width: 340px;
+     
+     height: 100%;
+}
+.card-grid-img{
+     object-fit: cover; 
+     border-radius: 25px; 
+     
+     width: 100%;
+     height: 100%;
+}
+.card-grid-txt{
+     position: relative;
+     bottom: 17.5%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+
+     color: white;
+     font-size: 18px;
+
+     padding-left: 15px;
+     padding-right: 10%;     
+}
+@media (max-width: 991px) {
+     .card-grid-container{          
+          width: 100%;
+          max-width: none;       
+     } 
+     .card-grid-txt{     
+          bottom: 25%;
+          left: 50%;
+          transform: translate(-50%, -50%);    
+             
+     }    
+   }

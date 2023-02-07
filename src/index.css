@@ -1,0 +1,28 @@
+body {
+  margin: 0 ;
+  font-family: 'Montserrat', sans-serif;    
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+p, a {
+     font-size: 24px;
+     font-weight: 500;
+}
+a{
+     text-decoration: none;
+}
+a:hover{
+     text-decoration: underline;
+     color:#FF6060;
+}
+@media (max-width: 720px) {
+     p, a {
+          font-size: 12px;          
+     }  
+   }
