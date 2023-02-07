@@ -2,9 +2,6 @@ import React from 'react';
 import Logo from '../assets/LOGO_white.png';
 import '../styles/Footer.css';
 
-//import styled from 'styled-components'
-//import { StyledLink } from '../../utils/style/Atoms'
-
 function Header() {
   return (
     <div className="footerWrapper">

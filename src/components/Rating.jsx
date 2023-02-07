@@ -10,7 +10,7 @@ import '../styles/Rating.css';
 function Rating({ rating }) {
   const star = Number(rating); //Number force the variable to be take as an number
   const [isMobile, setIsMobile] = useState(false);
-  //choose the screen size
+  //choose the screen size to make change on wanted device
   const handleResize = () => {
     if (window.innerWidth < 720) {
       setIsMobile(true);
