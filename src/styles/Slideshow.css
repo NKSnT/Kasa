@@ -48,12 +48,12 @@
      }
      .slideshow-button-left{ 
           position: relative; 
-          top: -167.5px; 
+          top: -137.5px; 
           left: 20px;    
      }
      .slideshow-button-right{ 
           position: relative; 
-          top: -167.5px;     
-          left: calc((100%) - (48*2px + 20px ));
+          top: -137.5px;     
+          left: calc((100%) - (13*2px + 20px ));
      }
    }
