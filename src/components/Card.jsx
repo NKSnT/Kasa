@@ -7,7 +7,7 @@ import '../styles/Card.css';
 function Card({ title, cover, id }) {
   return (
     <div className="card-grid-container">
-      <Link to={`/Logement/${id}`}>     
+      <Link to={`/Logement/${id}`}>
         <img src={cover} alt="profile du logement" className="card-grid-img" />
         <p className="card-grid-txt">{title}</p>
       </Link>

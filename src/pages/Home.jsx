@@ -19,7 +19,7 @@ function Home() {
     setDataLoading(true);
     async function fetchLogements() {
       try {
-          //for backend fetch
+        //for backend fetch
         /* const response = await fetch('../asstes/logements');
         const { infoLogementsData } = await response.json(); */
 
@@ -55,4 +55,3 @@ function Home() {
   }
 }
 export default Home;
-

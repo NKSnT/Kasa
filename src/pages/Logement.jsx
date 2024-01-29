@@ -65,9 +65,9 @@ function Logement() {
                     {infoLogement.tags.map((tags, index) => (
                       <Tagshow tags={tags} key={index} />
                     ))}
-                  </div>                  
+                  </div>
                 </div>
-                <div className="host-rating">                
+                <div className="host-rating">
                   <Host name={infoLogement.host.name} picture={infoLogement.host.picture} />
                   <div className="rating-container">
                     <Rating rating={infoLogement.rating} />
