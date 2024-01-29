@@ -42,29 +42,14 @@ function Slideshow({ pictures }) {
     return (
       <div className="slideshow-content">
         <img className="slideshow-img" src={pictures[index]} alt="test" />
-        {isMobile && (
-          <div>
-            <button className="slideshow-button-left" onClick={handlePrevious}>
-              <img src={arrow_left_mobile} alt="arrow" className="" />
-            </button>
-            <button className="slideshow-button-right" onClick={handleNext}>
-              <img src={arrow_right_mobile} alt="arrow" className="" />
-            </button>
-          </div>
-        )}
-        {!isMobile && (
-          <div>
-            <button className="slideshow-button-left" onClick={handlePrevious}>
-              <img src={arrow_left} alt="arrow" className="" />
-            </button>
-            <button className="slideshow-button-right" onClick={handleNext}>
-              <img src={arrow_right} alt="arrow" className="" />
-            </button>
-            <p className="img-counter">
-              {index + 1}/{pictures.length}
-            </p>
-          </div>
-        )}
+        <div>
+          <button className="slideshow-button-left" onClick={handlePrevious}>
+            <img src={isMobile ? arrow_left_mobile : arrow_left} alt="arrow" className="" />
+          </button>
+          <button className="slideshow-button-right" onClick={handleNext}>
+            <img src={isMobile ? arrow_right_mobile : arrow_right} alt="arrow" className="" />
+          </button>
+        </div>
       </div>
     );
   }
