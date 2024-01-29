@@ -1,46 +1,46 @@
-.banner{
-     
-     position: relative;
-     text-align: center; 
-     display: inline-block;
-         
-     box-sizing: border-box;
+.banner {
+  position: relative;
+  text-align: center;
+  display: inline-block;
 
-     background: #000000;
-     mix-blend-mode: darken;
-     
-     border-radius: 30px;
-     height: 100%;
+  box-sizing: border-box;
 
-     width: 100%;
-     /*needed to ajust to the image size cuz it 223px*/
+  background: #000000;
+  mix-blend-mode: darken;
+
+  border-radius: 30px;
+  height: 100%;
+
+  width: 100%;
+  /*needed to ajust to the image size cuz it 223px*/
 }
 .banner-text {
-     position: absolute;    
-     
-     top: 30%;
-     left: 50%;
-     transform: translate(-50%, -50%);
+  position: absolute;
 
-     font-size: 48px;
-     color:white;
-   }
-.banner-img{   
-     object-fit: cover;     
-     border-radius: 25px;
-     max-width: 100%;
-     height: 100%;
-}   
-@media (max-width: 991px) {        
-     .banner-text {              
-          font-size: 28px;
-     }
-     .banner-img{  
-          width: 100%;          
-     } 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: white;
+  margin: 0;
 }
-@media (max-width: 350px) {        
-     .banner-text {              
-          font-size: 22px;
-     }     
+.banner-img {
+  object-fit: cover;
+  border-radius: 25px;
+  max-width: 100%;
+  height: 100%;
+  filter: brightness(0.75);
+}
+@media (max-width: 991px) {
+  .banner-text {
+    font-size: 28px;
+  }
+  .banner-img {
+    width: 100%;
+  }
+}
+@media (max-width: 350px) {
+  .banner-text {
+    font-size: 22px;
+  }
 }
