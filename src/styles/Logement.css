@@ -1,115 +1,112 @@
-.logementInfo-section{
-     width: 100%;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     
-     padding: 0 0 20px 0;  
-}
-.logement-info-wrapper{
-     display: flex;
-     flex-direction: row;
-     width: 100%;
-}
-.logement-introinfo{
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-     align-items: flex-start;
+.logementInfo-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-     width: 100%;  
-     margin: 30px 0 24px 0;   
+  padding: 0 0 20px 0;
 }
-.logement-introinfo p, h1{
-     color: #FF6060;
+.logement-info-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
-.logement-title{
-     font-size: 36px;
-     font-weight: 500;
-     margin: 0;
+.logement-introinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  width: 100%;
+  margin: 30px 0 24px 0;
 }
-.logement-location{
-     font-size: 26px;
-     font-weight: 500;
-     margin: 0;
+.logement-introinfo p,
+h1 {
+  color: #ff6060;
 }
-.host-rating{
-     width: 100%;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: flex-end;
-     flex-wrap: wrap;
-     margin: 30px 0 24px 0;
+.logement-title {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0;
+}
+.logement-location {
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0;
+}
+.host-rating {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin: 30px 0 24px 0;
 }
 .host-rating p {
-     color: #FF6060;     
+  color: #ff6060;
 }
-.host-wrapper{
-     display: flex;
-     text-align: center; 
-     flex: 1;
-         
+.host-wrapper {
+  display: flex;
+  text-align: center;
+  flex: 1;
 }
-.tags-container{
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     flex-wrap: wrap;
-     margin-top: 20px;
+.tags-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
-.rating-container{
-     display: flex;     
-     flex-direction: row;
-     align-items: center; 
-     margin-top: 20px;       
+.rating-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
 }
-.logement-collapsible-container{
-     display: flex;
-     flex-direction: row;
+.logement-collapsible-container {
+  display: flex;
+  flex-direction: row;
 
-     width: 100%;
+  width: 100%;
 }
-.logement-collapsible-content{
-     flex-direction: column;
-     height: 100%;
+.logement-collapsible-content {
+  flex-direction: column;
+  height: 100%;
 }
-.logement-collapsible-p{
-     font-size: 18px;
-}
-.host-wrapper p{
-     font-size: 18px;     
-     margin: 7.5px 0 7.5px 0 ;
+.host-wrapper p {
+  font-size: 18px;
+  margin: 7.5px 0 7.5px 0;
 }
 @media (max-width: 720px) {
-     .logement-collapsible-container{
-          flex-direction: column;
-     }
-     .logement-info-wrapper{
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          margin: 30px 0 24px 0;
-     }     
-     .host-rating{
-          flex-direction: row-reverse;
-          justify-content: space-between;
-          align-items: center;  
-          margin-top: 0;                 
-     }
-     .host-wrapper{
-          flex:0;
-     }
-     .rating-container{
-          margin: 0;
-     }     
-     .host-wrapper p{
-          font-size: 14px;
-     
-     } 
+  .logement-collapsible-container {
+    flex-direction: column;
+  }
+  .logement-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 30px 0 24px 0;
+  }
+  .host-rating {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+  }
+  .host-wrapper {
+    flex: 0;
+  }
+  .rating-container {
+    margin: 0;
+  }
+  .host-wrapper p {
+    font-size: 14px;
+  }
 }
 @media (max-width: 991px) {
-     .logement-title, .logement-location{
-          font-size: 18px;
-     }
+  .logement-title,
+  .logement-location {
+    font-size: 18px;
+  }
 }

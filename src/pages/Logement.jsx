@@ -75,17 +75,9 @@ function Logement() {
                 </div>
               </div>
               <div className="logement-collapsible-container">
-                <Collapsible label="Description">
-                  <p className="logement-collapsible-p">{infoLogement.description}</p>
-                </Collapsible>
+                <Collapsible label="description" content={infoLogement.description} />
                 <div className="collapssible-separator"></div>
-                <Collapsible label="Equipements">
-                  {infoLogement.equipments.map((element, index) => (
-                    <p className="logement-collapsible-p" key={index}>
-                      {element}
-                    </p>
-                  ))}
-                </Collapsible>
+                <Collapsible label="Equipements" content={infoLogement.equipments} />
               </div>
             </div>
           </div>

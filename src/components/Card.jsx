@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import DefaultPicture from '../assets/default-png.png';
 import '../styles/Card.css';
 function Card({ title, cover, id }) {
+  console.log(id);
   return (
     <div
       className="card-grid-container"
