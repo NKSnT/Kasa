@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Logo from '../assets/LOGO.png';
 import '../styles/Header.css';
 
@@ -12,10 +13,10 @@ function Header() {
         </Link>
         <ul>
           <li>
-            <Link to="/">Acceuil</Link>
+            <NavLink to="/">Acceuil</NavLink>
           </li>
           <li>
-            <Link to="/about">A Propos</Link>{' '}
+            <NavLink to="/about">A Propos</NavLink>
           </li>
         </ul>
       </div>
