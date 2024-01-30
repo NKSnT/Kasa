@@ -12,9 +12,6 @@ function Tagshow({ tags }) {
     }
     handleContainerSize();
   }, []);
-  console.log(tags);
-  console.log(tags.length);
-
   return (
     <div className={isTooLong ? 'tag-container_big' : 'tag-container'}>
       <p>{tags}</p>

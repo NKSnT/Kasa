@@ -10,9 +10,7 @@ import '../styles/Rating.css';
 function Rating({ rating }) {
   const star = Number(rating); //Number force the variable to be take as an number
   const [isMobile, setIsMobile] = useState(false);
-  /* const [isFUllStar, setIsFullStar] = useState; */
   //choose the screen size to make change on wanted device
-  console.log(isMobile);
   const handleResize = () => {
     if (window.innerWidth < 720) {
       setIsMobile(true);
@@ -26,14 +24,14 @@ function Rating({ rating }) {
 
   return (
     <div>
-      {[...Array(star)].map((value, index) => {
+      {[...Array(star)].map((index) => {
         return (
           <span className="" key={index}>
             <img src={!isMobile ? star_full : star_full_mobile} alt="full star" />
           </span>
         );
       })}
-      {[...Array(5 - star)].map((value, index) => {
+      {[...Array(5 - star)].map((index) => {
         return (
           <span className="" key={index}>
             <img src={!isMobile ? star_empty : star_empty_mobile} alt="empty star" />

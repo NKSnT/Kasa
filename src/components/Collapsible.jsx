@@ -7,14 +7,6 @@ import arrow_up from '../assets/arrow_up.png';
 import '../styles/Collapsible.css';
 
 function Collapsible(props) {
-  console.log(props);
-  console.log(props.content);
-  /*  props.content.map((element) => (
-    <p className="">
-      {element}
-    </p>
-  )) */
-
   const contentRef = useRef();
 
   const [isAList, setIsAList] = useState(false);
