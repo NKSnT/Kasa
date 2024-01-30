@@ -76,11 +76,9 @@
   .collapsible-content-parent p {
     font-size: 12px;
   }
-  .collapsible-content {
-    padding: 15px 0 25px 0;
-  }
   .collapsible-content p {
     font-size: 12px;
+    padding: 10px 30px 15px 30px;
   }
   .collapsible-button {
     max-height: 30px;
