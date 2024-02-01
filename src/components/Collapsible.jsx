@@ -18,7 +18,6 @@ function Collapsible(props) {
     }
     handleList();
   }, []);
-  console.log(isAList);
   const [open, setOPen] = useState(false);
   const toggle = () => {
     setOPen(!open);

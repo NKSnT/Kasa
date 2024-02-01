@@ -25,10 +25,12 @@ function Slideshow({ pictures }) {
   const length = pictures.length;
 
   const handlePrevious = () => {
+    console.log('test1');
     const newIndex = index - 1;
     setIndex(newIndex < 0 ? length - 1 : newIndex);
   };
   const handleNext = () => {
+    console.log('test2');
     const newIndex = index + 1;
     setIndex(newIndex >= length ? 0 : newIndex);
   };
@@ -49,6 +51,11 @@ function Slideshow({ pictures }) {
           <button className="slideshow-button-right" onClick={handleNext}>
             <img src={isMobile ? arrow_right_mobile : arrow_right} alt="arrow" className="" />
           </button>
+          {!isMobile && (
+            <p className="img-counter">
+              {index + 1}/{pictures.length}
+            </p>
+          )}
         </div>
       </div>
     );
